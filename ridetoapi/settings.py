@@ -115,8 +115,16 @@ USE_I18N = True
 
 USE_L10N = True
 
-CORS_ORIGIN_WHITELIST = [
-    'https://ride-to-frontend.herokuapp.com',
-    'localhost:8097',
-    '127.0.0.1:8097'
-]
+CORS_ORIGIN_ALLOW_ALL = True;
+
+CORS_ALLOW_HEADERS = (
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+)
