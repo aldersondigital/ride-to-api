@@ -114,3 +114,9 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_L10N = True
+
+CORS_ORIGIN_WHITELIST = [
+    'https://ride-to-frontend.herokuapp.com',
+    'localhost:8097',
+    '127.0.0.1:8097'
+]
