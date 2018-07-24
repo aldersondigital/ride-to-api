@@ -14,7 +14,7 @@ class Category(models.Model):
 
 class Product(models.Model):
     """This class represents the Product model."""
-    category = models.ForeignKey(Category, null=True)
+    category = models.ForeignKey(Category, on_delete=models.PROTECT, null=True)
     name = models.CharField(max_length=255, blank=False, unique=True)
     description = models.CharField(max_length=255, blank=False, unique=False)
     link = models.CharField(max_length=255, blank=False, unique=False)
